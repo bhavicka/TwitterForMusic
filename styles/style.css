@@ -1,0 +1,48 @@
+/* Styles go here */
+
+/* Styles go here */
+
+#wrap
+{
+	width: 600px;
+	margin: 0 auto;
+}
+
+#left_col
+{
+	float: left;
+	width: 300px;
+}
+
+#right_col
+{
+	float: right;
+	width: 300px;
+}
+
+#header
+{
+	float: left;
+	width: auto;
+}
+
+
+h1
+{
+	color : #563d7c;
+	font-weight: 300;
+	margin: 5px;
+}
+
+
+.row.vdivide [class ='col-sm-4']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
