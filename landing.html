@@ -1,0 +1,37 @@
+<html ng-app="twitterApp">
+
+  <head>
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="styles/css/bootstrap.min.css" />
+    <script data-require="bootstrap@*" data-semver="3.3.2" src="js/bootstrap.min.js"></script>
+    <script data-require="angular.js@*" data-semver="1.2.16" src="js/angular.js"></script> 
+	<script  data-semver="1.2.16" src="js/angular-route.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="js/oauth.js"></script>
+	<script src="js/loginCtrl.js"></script>
+	<script src="js/logoutCtrl.js"></script>
+	<script src="js/authservice.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+<body>
+    <div class="container">
+        <h1>Twitter for Music</h1>
+        <div class="row">
+            <div class="col-xs-12">
+                <button ng-click="connectButton()" id="connectButton" type="button" class="btn btn-primary" ng-controller="loginCtrl">Connect Twitter</button>
+					<h3>{{user.alias}} </h3>
+				
+                <button ng-click="signOut()" id="signOut" type="button" class="btn btn-link" style="display:none;" ng-controller="logoutCtrl">Sign Out</button>
+            </div>
+        </div>
+		
+		
+		
+    </div>
+</body>
+
+</html>
+
+
+</html>
